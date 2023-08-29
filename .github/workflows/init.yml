@@ -2,6 +2,7 @@ name: Init Project
 
 on: 
   create
+on: workflow_dispatch
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -20,3 +21,4 @@ jobs:
       with:
         from-name: your-unique-name
         to-name: my-project
+        github-token: ${{ secrets.SECRET }}
